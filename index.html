@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Jerick Malungcut | Home</title>
+</head>
+
+<body>
+  <header class="header" id="particles-js">
+    <nav class="main-nav">
+      <div class="logo"><a href="index.html"><img src="img/icon.png" alt="logo"><span>Jerick</span>Malungcut</a></div>
+      <ul class="nav-link">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profie</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__profile">
+      <img src="img/profile-pic.png" alt="Profile picture">
+      <h1 class="my-name">&lt;/JerickMalungcut&gt;</h1>
+      <div class="main-typed-text">
+        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="profile">
+
+  </section>
+
+
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/callextension.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v8.0'
+    });
+  };
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="643266276291075" theme_color="#267fea"
+  logged_in_greeting="Hi! This is Jerick, how can I help you?"
+  logged_out_greeting="Hi! This is Jerick, how can I help you?">
+</div>
